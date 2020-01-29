@@ -1,5 +1,5 @@
 @media screen and (max-width: 520px) {
-    body.home {
+    body {
         margin: 0;
         padding: 0;
         background-color: #737373;
@@ -11,18 +11,6 @@
         overflow-x: hidden;
     }
 
-    body.reviews {
-        margin: 0;
-        padding: 0;
-        background-color: #737373;
-        background-attachment: fixed;
-        background-position: center bottom; 
-        background-repeat: no-repeat;
-        color: #cdcdcd;
-        font-family: "Avenir Next", "Avenir", sans-serif;
-        overflow-x: hidden;
-    }
- 
     #menuToggle{
         display: block;
         position: relative;
@@ -131,6 +119,7 @@
     }
 
    .bio {
+        color: #EEEEEE;
         margin-left: 20px;
         margin-right: 20px;
         font-size: 18px;
@@ -145,6 +134,7 @@
     }
 
     .services {
+        color: #EEEEEE;
         margin-left: 20px;
         margin-right: 20px;
         font-size: 18px;
@@ -159,6 +149,7 @@
     }
     
     .where {
+        color: #EEEEEE;
         margin-left: 20px;
         margin-right: 20px;
         margin-bottom: 120px;
@@ -253,16 +244,371 @@
     }
 
     .photos-text {
-        margin-left: auto;
-        margin-right: auto;
+        margin-top: 45px;
+        margin-left: 20px;
+        margin-right: 20px;
         font-size: 18px;
-        padding-left: 50px;
+        color: #EEEEEE;
     
     }
 
     .container2 {
-        margin-left: 70px;
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 18px;
+        width: 80%;
+
+    }
+
+    .container2>video {
+        padding-bottom: 10px;
+    }
+    
+    .contact-text>h1 {
+        font-size: 18px;
+        background-color: white;
+        color: #737373;
+        width: 100%;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto; 
+    }
+
+    .contact-text {
+        margin-left: 20px;
+        margin-right: 20px;
+        font-size: 18px;
+        margin-top: 45px;
+        text-align: center;
+    }
+
+    .contact-text>p {
+        color: #EEEEEE;
+    }
+
+    .contact-text-links {
+        background-color: white;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .contact-text-links a{
+        color: #737373;
+        font-size: 18px;
+    }
+
+}
+
+
+@media screen and (min-width: 768px) {
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: #737373;
+        background-attachment: fixed;
+        background-position: center bottom; 
+        background-repeat: no-repeat;
+        color: #cdcdcd;
+        font-family: "Avenir Next", "Avenir", sans-serif;
+        overflow-x: hidden;
+    }
+
+    #menuToggle{
+        display: none;
+    }
+ 
+    #menuToggle a{
+        display: none;
+    }
+
+    #menuToggle a:active {
+        display: none;
+    }
+ 
+ 
+    #menuToggle input {
+        display: none;
+    }
+ 
+
+    #menuToggle span {
+        display: none;
+    }
+ 
+    #menuToggle span:first-child    {
+        display: none;
+    }
+ 
+    #menuToggle span:nth-last-child(2) {
+        display: none;
+    }
+ 
+
+    #menuToggle input:checked ~ span {
+        display: none;
+    }
+ 
+
+    #menuToggle input:checked ~ span:nth-last-child(3) {
+        display: none;
+    }
+ 
+
+    #menuToggle input:checked ~ span:nth-last-child(2) {
+        display: none;
+    }
+
+    #menu {
+        display: none;
+    }
+ 
+    #menu li {
+        display: none;
+    }
+ 
+ 
+    #menuToggle input:checked ~ ul {
+        transform: none;
+    }
+
+    #nav-large ul {
+        list-style-type: none;
+        position: fixed;
+        text-align: center;
+        z-index: 9999;
+        transition: all ease .5s;
+        
+    }
+
+    #nav-large ul>li {
+        display: inline-block;
+        text-align: center;
+        margin-left: 35px; 
+        margin-right: 35px;
+        margin-top: 15px;
+        font-size: 25px;
+        transition: all ease .5s;
+        
+
+    }
+
+    #nav-large>ul>li a {
+        color: black;
+        transition: all ease .5s;
+    }
+
+    #nav-large {
+        height: 50px;
+        background-color: white;
+        position: fixed;
+        width: 100%;
+        height: 100px;
+        transition: all ease .5s;
+        z-index: 9999;
+    }
+   
+    #top>img {
+        display: block;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+   .bio {
+        color: #EEEEEE;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 18px;
+        width: 75%;
+        display: block;
+        padding-bottom: 20px;
+    }
+
+    .bio>h1 {
+        font-size: 18px;
+        background-color: white;
+        color: #737373;
+        width: 100%;
+        text-align: center;
+    }
+
+    .services {
+        color: #EEEEEE;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 18px;
+        width: 75%;
+        display: block;
+        padding-bottom: 20px;
+    }
+
+    .services>h1 {
+        font-size: 18px;
+        background-color: white;
+        color: #737373;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .where {
+        color: #EEEEEE;
+        margin-left: auto;;
+        margin-right: auto;;
+        margin-bottom: 120px;
+        font-size: 18px;
+        width: 75%;
+        display: block;
+        padding-bottom: 20px;
+    }
+
+    .where>h1 {
+        font-size: 18px;
+        background-color: white;
+        color: #737373;
+        width: 100%;
+        text-align: center;
+    }
+
+    #footer {
+        background-color: white;
+        color: #737373;
+        text-align: center;
+        margin-bottom: 20px;
+        height: 100px;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        position: fixed;
+        bottom: 0pt;
+        left: 0pt;
+    }
+
+    #footer>a {
+        color: black;
+        font-size: 25px;
+        line-height: 10px;
+        
+    }
+
+    .container1 {
+        width: 534px;
+        margin-left: auto;
+        margin-right: auto;
+        overflow: auto;
+        padding-top: 150px;
 
     }
     
+    .slider-inner {
+        width: 400px;
+        height: 530px;
+        position:relative;
+        overflow:hidden;
+        float:left;
+        padding: 0px;
+        border:#666 solid 1px;
+
+    }
+    
+    .slider-inner img {
+        display:none;
+        
+    }
+    
+    .slider-inner img.active {
+        display:inline-block;
+    }
+    
+    .prev-photo,.next-photo {
+        float:left;
+        margin-top: 250px;
+        cursor: pointer;
+
+    }
+    
+    .prev-photo {
+        position:relative;
+        margin-right:-45px;
+        z-index:100;
+        padding-left: 50px;
+    }
+    
+    .next-photo {
+        position:relative;
+        margin-left:-45px;
+        z-index:100;
+    }
+
+    .photos-text>h1 {
+        font-size: 18px;
+        background-color: white;
+        color: #737373;
+        width: 100%;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    
+    }
+
+    .photos-text {
+        margin-top: 45px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 18px;
+        color: #EEEEEE;
+        width: 75%;
+    }
+
+    .container2 {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 18px;
+        width: 75em;
+
+    }
+
+    .container2>video {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .contact-text>h1 {
+        font-size: 18px;
+        background-color: white;
+        color: #737373;
+        width: 100%;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto; 
+    }
+
+    .contact-text {
+        margin-left: 20px;
+        margin-right: 20px;
+        font-size: 18px;
+        margin-top: 45px;
+        text-align: center;
+    }
+
+    .contact-text>p {
+        color: #EEEEEE;
+    }
+
+    .contact-text-links {
+        background-color: white;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .contact-text-links a{
+        color: #737373;
+        font-size: 18px;
+    }
+
 }

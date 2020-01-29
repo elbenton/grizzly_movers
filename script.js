@@ -22,31 +22,3 @@ $(document).ready(function (){
     });
 
 });
-
-
-
-
-/*
-    $(function() {
-    
-    let width = 720;
-    let animationSpeed = 1000;
-    let pause = 4000;
-    let currentSlide = 1;
-    let $slideshow = $('.slideshow');
-    let $slideContainer = $slideshow.find('.slides');
-    let $slides = $slideContainer.find('.slide');
-    
-    
-    setInterval (function () {
-        $slideContainer.animate({'margin-left': '-='+width}, animationSpeed, function(){
-            currentSlide++; 
-            if (currentSlide === $slides.length) {
-                currentSlide  = 1;
-                $slideContainer.css('margin-left', 0);
-            }
-        });
-    }, pause);
-
-}); 
-/*/
