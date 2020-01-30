@@ -24,7 +24,7 @@
     #menuToggle a{
         text-decoration: none;
         color: #232323;
-        transition: color 0.3s ease;
+        
     }
 
     #menuToggle a:active {
@@ -162,6 +162,7 @@
         color: #737373;
         width: 100%;
         text-align: center;
+    
     }
 
     #footer {
@@ -298,6 +299,12 @@
         color: #737373;
         font-size: 18px;
     }
+    
+    .spacer {
+        width: 100%;
+        height: 95px;
+    
+    }
 
 }
 
@@ -377,26 +384,30 @@
         list-style-type: none;
         position: fixed;
         text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
         z-index: 9999;
-        transition: all ease .5s;
+        padding: 0;
+        
         
     }
 
-    #nav-large ul>li {
+    #nav-large ul li {
         display: inline-block;
         text-align: center;
         margin-left: 35px; 
         margin-right: 35px;
         margin-top: 15px;
         font-size: 25px;
-        transition: all ease .5s;
+        
         
 
     }
 
     #nav-large>ul>li a {
         color: black;
-        transition: all ease .5s;
+        
     }
 
     #nav-large {
@@ -405,7 +416,6 @@
         position: fixed;
         width: 100%;
         height: 100px;
-        transition: all ease .5s;
         z-index: 9999;
     }
    
@@ -521,25 +531,27 @@
         display:inline-block;
     }
     
-    .prev-photo,.next-photo {
+    .prev,.next {
         float:left;
         margin-top: 250px;
         cursor: pointer;
 
     }
     
-    .prev-photo {
+    .prev {
         position:relative;
         margin-right:-45px;
         z-index:100;
         padding-left: 50px;
     }
     
-    .next-photo {
+    .next {
         position:relative;
         margin-left:-45px;
         z-index:100;
     }
+
+    
 
     .photos-text>h1 {
         font-size: 18px;
@@ -561,21 +573,15 @@
         width: 75%;
     }
 
-    .container2 {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        font-size: 18px;
-        width: 75em;
-
+    .container-vid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
     }
 
-    .container2>video {
-        display: flex;
-        flex-direction: column;
-        padding-bottom: 10px;
-        margin-left: auto;
-        margin-right: auto;
+    video {
+        outline: none;
     }
     
     .contact-text>h1 {
@@ -589,11 +595,12 @@
     }
 
     .contact-text {
-        margin-left: 20px;
-        margin-right: 20px;
+        margin-left: auto;
+        margin-right: auto;
         font-size: 18px;
         margin-top: 45px;
         text-align: center;
+        width: 75%;
     }
 
     .contact-text>p {
@@ -606,9 +613,16 @@
         text-align: center;
     }
 
-    .contact-text-links a{
-        color: #737373;
+    .contact-text-links a {
+        color: black;
         font-size: 18px;
     }
+
+    .spacer {
+        width: 100%;
+        height: 95px;
+    
+    }
+
 
 }

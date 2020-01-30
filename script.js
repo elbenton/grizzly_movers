@@ -1,7 +1,7 @@
 'use strict';
 
 $(document).ready(function (){
-    $('.next-photo').on('click', function(){
+    $('.next').on('click', function(){
         let currentImg = $('.active');
         let nextImg = currentImg.next();
 
@@ -11,7 +11,7 @@ $(document).ready(function (){
         }
     });
 
-    $('.prev-photo').on('click', function(){
+    $('.prev').on('click', function(){
         let currentImg = $('.active');
         let prevImg = currentImg.prev();
 
@@ -20,5 +20,4 @@ $(document).ready(function (){
             prevImg.addClass('active').css('z-index', 10);
         }
     });
-
-});
+})
